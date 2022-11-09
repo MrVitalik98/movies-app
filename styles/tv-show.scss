@@ -1,0 +1,192 @@
+.tvShow {
+  @extend .movie;
+
+  .tvShow-details {
+    @extend .movie-details;
+  }
+
+  .list-season {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  
+    .btn {
+      background: rgb(6, 68, 131);
+      border-radius: 15px;
+      color: #fff;
+  
+      &:hover {
+        background: rgb(4, 57, 110);
+      }
+    }
+  
+    .active {
+      background: rgb(1, 36, 66);  
+  
+      &:hover {
+        background: rgb(1, 27, 49);  
+      }
+    }
+  }
+
+  .season-data {
+    min-height: 400px;
+    position: relative;
+
+    .season-number {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      font-weight: 600;
+    
+      &::after, &::before {
+        content: '';
+        min-width: 60px;
+        height: 2px;
+        background: #34344d;
+        display: block;
+      }
+    }
+    
+    .season {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin: 20px 0;
+    
+      .top-col {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    
+        .season-img {
+          min-width: 250px;
+          position: static;
+          height: 250px;
+    
+          div {
+            width: 100%;
+            height: 100%;
+    
+            img {
+              border-radius: 12px;
+            }
+          }
+        }
+      
+        .data {
+          p {
+            margin: 0
+          }
+        }
+      }
+    
+      .bottom-col {
+        .list-episode {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 7px;
+    
+          .btn {
+            background: #368;
+            color: #fff;
+            text-align: left;
+    
+            &:hover {
+              background: rgb(38, 87, 119);
+            }
+          }
+    
+          .active {
+            background: rgb(12, 60, 92);
+    
+            &:hover {
+              background: rgb(12, 60, 92);
+            }
+          }
+        }
+      }
+    }
+
+    .episode-data {
+      position: relative;
+      min-height: 300px;
+
+      .episode {
+        @extend .season;
+      
+        .episode-number {
+          @extend .season-number;
+        }
+      
+        .top-col {
+          display: flex;
+          justify-content: space-between;
+
+          .episode-img{
+            min-width: 200px;
+            position: static;
+            height: 180px;
+      
+            div {
+              width: 100%;
+              height: 100%;
+      
+              img {
+                border-radius: 12px;
+              }
+            }
+          }
+      
+          .data {
+            text-align: justify;
+      
+            .episode-name {
+              font-size: 22px;
+            }
+          }
+        }
+      
+        div .list-group {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .tvShow {
+    .season-data {
+      .season {
+        .top-col {
+          flex-wrap: wrap;
+          justify-content: center;
+    
+          .season-img {
+            div {
+              border-radius: 50%;
+    
+              img {
+                border-radius: 0;
+              }
+            }
+          }
+        }
+      }
+    
+      .episode-data {
+        .episode {
+          .top-col {
+            flex-wrap: wrap-reverse;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+#filterForm {
+  margin: 40px auto 100px;
+  padding: 0 7px;
+  max-width: 740px;
+
+  .row {
+    .form-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      label {
+        margin: 0;
+        width: auto;
+      }
+  
+      &:first-child {
+        select {
+          width: 160px;
+        }
+      }
+
+      input[type="number"] {
+        max-width: 85px;
+      }
+    }
+
+    #releaseDate, #voteAverage {
+      max-width: 370px;
+    }
+  }
+
+  .btn {
+    background: rgb(15, 45, 73);
+    color: #fff;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    svg {
+      height: 14px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #filterForm {
+    .row {
+      .form-group {
+        label {
+          width: 115px;
+        }
+
+        &:first-child {
+          select {
+            width: 100%;
+          }
+        }
+      }
+
+      #releaseDate, #voteAverage {
+        max-width: auto;
+        
+        label {
+          width: 125px;
+        }
+      }
+    }
+  }
+}
