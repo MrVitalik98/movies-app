@@ -121,7 +121,7 @@ const TVShows:FC = () => {
   return (
     <>
       <Head>
-        <title>TV Shows</title>
+        <title>Top Movies and TV Shows Stats</title>
       </Head>
 
       <MoviesLayout>

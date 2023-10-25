@@ -67,7 +67,7 @@ const TvShowDetails:FC = () => {
   return (
     <>
       <Head>
-        <title>{tvShow.name}</title>
+        <title>Top Movies and TV Shows Stats: {tvShow.name}</title>
       </Head>
       
       <div className="container tvShow">

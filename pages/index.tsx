@@ -120,7 +120,7 @@ const Movies:FC = () => {
   return (
     <>
       <Head>
-        <title>Movies</title>
+      <title>Top Movies and TV Shows Stats</title>
       </Head>
 
       <TvShowsLayout>
