@@ -24,6 +24,11 @@ class MyDocument extends Document<FC> {
 
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"></link>
+
+          <script 
+            async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2447053498638493"
+            crossOrigin="anonymous">
+          </script>
         </Head>
         <body>
           <noscript>
