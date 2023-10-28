@@ -51,9 +51,9 @@ const MovieItem:FC<IMovieProps> = ({ movie }) => {
       />
 
       <div className="card-body">
-        <h3 className="card-title">
+        <h2 className="card-title">
           {movie.title} {movie.release_date && `(${getYear(movie.release_date)})`}
-        </h3>
+        </h2>
 
         {movie.vote_average ? (
           <kbd className={`${textStyle(movie.vote_average)}`}>
