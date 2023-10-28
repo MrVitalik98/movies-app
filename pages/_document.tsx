@@ -18,7 +18,7 @@ class MyDocument extends Document<FC> {
               })(window,document,'script','dataLayer','GTM-KHGWKWGL');`,
             }}
           />
-          <meta name="description" content="Explore Top Movies and TV Shows Stats" />
+          <meta name="description" content="Get in-depth statistics and insights into your favorite movies and TV shows. Discover trending films, ratings, cast details, and more" />
           <meta property="og:title" content="Top Movies and TV Shows Stats" />
           <meta property="og:description" content="Get in-depth statistics and insights into your favorite movies and TV shows. Discover trending films, ratings, cast details, and more" />
           <meta name="robots" content="index, follow" />
