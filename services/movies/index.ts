@@ -30,7 +30,7 @@ export const fetchPopularMovies = () => {
     dispatch(startFetchingPopularMovies())
 
     try {
-      const { page } = getState(state => state.moviesReducer)
+      const { page } = getState(state => state).moviesReducer
       const { data } = await API.getMoviesByType<IMovieData>('popular', page)
       dispatch(fetchPopularMoviesSuccedded(data.results))
     }catch(e) {
@@ -45,7 +45,7 @@ export const fetchTopRatedMovies = () => {
     dispatch(startFetchingTopRatedMovies())
 
     try {
-      const { page } = getState(state => state.moviesReducer)
+      const { page } = getState(state => state).moviesReducer
       const { data } = await API.getMoviesByType<IMovieData>('top_rated', page)
       dispatch(fetchTopRatedMoviesSuccedded(data.results))
     }catch(e) {

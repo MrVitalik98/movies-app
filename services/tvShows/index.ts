@@ -32,7 +32,7 @@ export const fetchPopularTVShows = () => {
     dispatch(startFetchingPopularTVShows())
 
     try {
-      const { page } = getState(state => state.moviesReducer)
+      const { page } = getState(state => state).tvShowsReducer
       const { data } = await API.getTVShowsByType<ITVData>('popular', page)
       dispatch(fetchPopularTVShowsSuccedded(data.results))
     }catch(e) {
@@ -46,7 +46,7 @@ export const fetchTopRatedTVShows = () => {
     dispatch(startFetchingTopRatedTVShows())
 
     try {
-      const { page } = getState(state => state.moviesReducer)
+      const { page } = getState(state => state).tvShowsReducer
       const { data } = await API.getTVShowsByType<ITVData>('top_rated', page)
       dispatch(fetchTopRatedTVShowsSuccedded(data.results))
     }catch(e) {
