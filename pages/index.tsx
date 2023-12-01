@@ -120,7 +120,11 @@ const Movies:FC = () => {
   return (
     <>
       <Head>
-      <title>Top Movies and TV Shows Stats</title>
+        <title>Top Movies and TV Shows Stats</title>
+        <script 
+          async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2447053498638493"
+          crossOrigin="anonymous">
+        </script>
       </Head>
 
       <TvShowsLayout>

@@ -48,6 +48,10 @@ const MovieDetails:FC = () => {
     <>
       <Head>
         <title>Top Movies and TV Shows Stats: {movie.title}</title>
+        <script 
+          async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2447053498638493"
+          crossOrigin="anonymous">
+        </script>
       </Head>
       
       <div className="container movie">
